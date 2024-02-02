@@ -41,7 +41,7 @@ header {
 }
 
 .container1 {
-    background-image: url(../images/1.jpeg);
+    background-image: url(./1.jpeg);
     height: 550px;
     padding: 40px;
 }
