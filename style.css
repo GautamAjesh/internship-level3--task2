@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333333;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav a:hover {
+    color: #45a050;
+}
+
+.container1 {
+    background-image: url(../images/1.jpeg);
+    height: 550px;
+    padding: 40px;
+}
+
+.container1 .upper{
+    display: block;
+    padding: 20px;
+}
+
+.container1 .upper h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.container1 .upper p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.container1 .lower {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #333333;
+}
+
+.department{
+    padding: 5px;
+}
+
+.location{
+    padding: 5px;
+}
+
+.salary{
+    padding: 5px;
+}
+
+.note{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    width: 70%;
+    padding: 10px;
+    color: #fff;
+}
+
+.container2 {
+    width: 70%;
+}
+
+.container2 .head {
+    background-color: #4caf50;
+    padding: 10px;
+    color: #fff;
+}
+
+.container2 .type {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.container2 .mission {
+    padding: 20px;
+}
+
+.container2 h3 {
+    color: #45a050;
+}
+
+.container2 .contributing {
+    padding: 20px;
+}
+
+.container2 .about {
+    padding: 20px;
+}
+
+
+.card {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 70%;
+}
+
+.card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.card label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    color: #fff;
+}
+
+footer .upfooter {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4caf50;
+    gap: 10px;
+    padding: 5px;
+}
+
+.fdetail,
+.ft {
+    background-color: #333333;
+}
+
+.fd h3{
+    color: #4caf50;
+}
+
+.fdetail {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.ft {
+    padding: 20px;
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .container1 {
+        height: 600px;
+        overflow: hidden;
+    }
+
+    .container1 .upper h1 {
+        font-size: 30px;
+    }
+
+    .container1 .note{
+        padding: 0px;
+    }
+
+    .container2 {
+        width: 100%;
+    }
+
+    .card {
+       max-width: 80%;
+       position: relative;
+       left: 0;
+    }
+
+    .fdetail{
+        flex-wrap: wrap;
+    }
+
+    .fd{
+        padding: 10px;
+    }
+    .note{
+        width: 100%;
+    }
+
+}
